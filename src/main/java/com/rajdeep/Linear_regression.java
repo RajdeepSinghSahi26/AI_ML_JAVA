@@ -9,7 +9,7 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LinearRegression{
+public class Linear_regression {
 
     public static void main(String[] args) throws Exception {
         String filePath = "data/Machine Learning Datasets Updated/19. Simple Linear Regression/Salary_Data.csv";
