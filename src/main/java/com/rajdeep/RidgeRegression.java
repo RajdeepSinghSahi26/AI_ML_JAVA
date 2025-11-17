@@ -35,7 +35,6 @@ public class RidgeRegression {
 
         Instances train = new Instances(data, 0, train_size);
         Instances test  = new Instances(data, train_size, test_size);
-
         // 4) TRAIN MODEL (RIDGE)
         LinearRegression model = new LinearRegression();
         model.setRidge(0.0001); // lambda = 1e-4
@@ -51,8 +50,8 @@ public class RidgeRegression {
         mean /= test.numInstances();
 
         double sst = 0;
-        for (int i = 0; i < test.numInstances(); i++) {
-
+        for (int i = 0; i < test.numInstances(); i++)
+        {
             double actual = test.instance(i).classValue();
             double pred   = model.classifyInstance(test.instance(i));
 
